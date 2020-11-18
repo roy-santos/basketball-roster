@@ -41,17 +41,26 @@ class App extends React.Component {
     return (
       <div className="container-fliud">
         <div className="row">
-          <div className="col s12">Menu</div>
+          <div className="col s12">
+            {" "}
+            <nav>
+              <div className="nav-wrapper blue darken-4">
+                <a href="/" className="brand-logo">
+                  Basketball Roster Management
+                </a>
+              </div>
+            </nav>
+          </div>
         </div>
         <div className="row">
-          <div className="col s3">
+          <div className="col s3 center-align">
             <PlayerList
               players={this.state.players}
               updateCurrentPlayer={this.updateCurrentPlayer}
             />
           </div>
           <div className="col s9">
-            <PlayerSingle />
+            <PlayerSingle player={this.state.currentPlayer} />
           </div>
         </div>
         <div className="row">

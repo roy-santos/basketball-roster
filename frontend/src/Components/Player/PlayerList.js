@@ -4,7 +4,7 @@ const PlayerList = (props) => {
   return (
     <div>
       <ul className="collection with-header">
-        <li classname="collection-header">
+        <li className="collection-header">
           <h4>Players</h4>
         </li>
         {props.players.map((item) => (
