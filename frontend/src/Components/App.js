@@ -37,9 +37,25 @@ class App extends React.Component {
     });
   }
 
+  imageFinder(firstName, lastName) {
+    let srcURL;
+
+    axios
+      .get(`images/${firstName}${lastName}.jpg`)
+      .then(() => {
+        srcURL = `images/${firstName}${lastName}jpg`;
+      })
+      .catch(() => {
+        srcURL = "images/lakerslogo.jpg";
+      });
+
+    console.log(srcURL);
+    return srcURL;
+  }
+
   render() {
     return (
-      <div className="container-fliud">
+      <div className="container-fluid">
         <div className="row">
           <div className="col s12">
             {" "}
@@ -60,7 +76,10 @@ class App extends React.Component {
             />
           </div>
           <div className="col s9">
-            <PlayerSingle player={this.state.currentPlayer} />
+            <PlayerSingle
+              player={this.state.currentPlayer}
+              imageFinder={this.imageFinder}
+            />
           </div>
         </div>
         <div className="row">

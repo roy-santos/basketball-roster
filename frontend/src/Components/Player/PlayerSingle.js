@@ -1,13 +1,13 @@
+import axios from "axios";
 import React from "react";
 
 const PlayerSingle = (props) => {
-  console.log(props.player.firstName);
-
   let srcURL;
   if (props.player.firstName === undefined) {
     srcURL = "images/lakerslogo.jpg";
   } else {
-    srcURL = `images/${props.player.firstName}${props.player.lastName}.jpg`;
+    srcURL =
+      "images/" + props.player.firstName + props.player.lastName + ".jpg";
   }
 
   return (
@@ -30,10 +30,20 @@ const PlayerSingle = (props) => {
             </p>
             <p>
               Ability: {props.player.ability} - Technique:
-              {props.player.techniques} - tactical:{props.player.tactical}
+              {props.player.techniques} - Tactical:{props.player.tactical}
             </p>
+            <p>Is Coach? : {props.player.isCoach}</p>
           </div>
           <div className="card-action">Team: {props.player.team}</div>
+          <div className="center">
+            <button
+              className="btn waves-effect waves-light"
+              type="submit"
+              name="action"
+            >
+              Delete Player
+            </button>
+          </div>
         </div>
       </div>
     </div>
