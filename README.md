@@ -10,11 +10,11 @@ A team roster management application. This example is for a basketball team but 
 ### Images
 
 **Main Screen**:<br>
-<img src="app_screenshots/mainScreen.png" width=150 align=center>
+<img src="app_screenshots/mainScreen.png" width=400 align=center>
 <br><br>
 **Player Profile**:<br>
-<img src="app_screenshots/playerProfile.png" width=450 align=center>
+<img src="app_screenshots/playerProfile.png" width=400 align=center>
 <br><br>
 **New Player Form**:<br>
-<img src="app_screenshots/newPlayerForm.png" width=450 align=center>
+<img src="app_screenshots/newPlayerForm.png" width=400 align=center>
 <br><br>
