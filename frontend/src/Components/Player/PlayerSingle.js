@@ -32,7 +32,6 @@ const PlayerSingle = (props) => {
               Ability: {props.player.ability} - Technique:
               {props.player.techniques} - Tactical:{props.player.tactical}
             </p>
-            <p>Is Coach? : {props.player.isCoach}</p>
           </div>
           <div className="card-action">Team: {props.player.team}</div>
           <div className="center">
