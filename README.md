@@ -1,6 +1,6 @@
 # Basketball Roster Application
 
-A team roster management application. This example is for a basketball team but the application can be adapted for any other sport.
+A team roster management application that can be used to keep track of players and coaches on the team. This example is for a basketball team but the application can be adapted for any other sport.
 
 ### Features
 
