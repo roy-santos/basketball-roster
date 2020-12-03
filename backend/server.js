@@ -1,14 +1,16 @@
-import express from "express";
-import mongoose from "mongoose";
-import bodyParser from "body-parser";
-import cors from "cors";
-import routes from "./routes/basketballRosterRoutes";
+import express from 'express';
+import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import routes from './routes/basketballRosterRoutes';
+import fs from 'fs';
+import path from 'path';
 
 const app = express();
 const PORT = 4000;
 
 // mongo connection
-mongoose.connect("mongodb://localhost/basketballRosterDB", {
+mongoose.connect('mongodb://localhost/basketballRosterDB', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -22,7 +24,7 @@ app.use(cors());
 
 routes(app);
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.send(`Your basketball-roster application is running on port ${PORT}!`);
 });
 

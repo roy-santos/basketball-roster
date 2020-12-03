@@ -36,7 +36,7 @@ class PlayerForm extends React.Component {
         coach: this.coachInput.current.value,
       })
       .then((response) => {
-        console.log(this.coachInput.current.value);
+        //console.log(this.coachInput.current.value);
         window.location.reload();
       })
       .catch((error) => {
